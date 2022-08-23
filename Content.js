@@ -1,1 +1,3 @@
-console.log("chrome extention working")
+chrome.action.onClicked.addListener(function() {
+    console.log('action clicked');
+  });

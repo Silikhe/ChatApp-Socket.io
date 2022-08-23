@@ -3,9 +3,17 @@
     "description": "An extention for testing FlatIron labs ",
     "name": "FI-testing",
     "version": "1.0.0",
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": [
+        "activeTab",
+        "tabs"
+    ],
     "content_scripts": [{
-        "matches": ["https://github.com/"],
-        "js": ["Content.js"]
+        "js": ["Content.js"],
+        "matches": ["http://*/*", "https://*/*", "<all_urls>"],
+        "css": ["styles.css"]
     }]
 }
 
