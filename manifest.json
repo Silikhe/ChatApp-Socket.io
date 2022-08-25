@@ -3,16 +3,14 @@
     "description": "An extention for testing FlatIron labs ",
     "name": "FI-testing",
     "version": "1.0.0",
+    "action": {
+        "default_title": "Sign In with Google Accounts"
+      },
     "background": {
         "service_worker": "background.js"
     },
     "permissions": [
         "activeTab",
         "tabs"
-    ],
-    "content_scripts": [{
-        "js": ["Content.js"],
-        "matches": ["http://*/*", "https://*/*", "<all_urls>"],
-        "css": ["styles.css"]
-    }]
+    ]
 }
